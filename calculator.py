@@ -5,4 +5,5 @@ students = {
 }
 
 for student, grades in students.items():
-    print(student, grades)
+    average = sum(grades) / len(grades)
+    print(student, "- Average:", average)
