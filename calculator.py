@@ -6,4 +6,8 @@ students = {
 
 for student, grades in students.items():
     average = sum(grades) / len(grades)
-    print(student, "- Average:", average)
+    if average >= 75:
+        result = "Pass"
+    else:
+        result = "Fail"
+print(student, "- Average:", round(average, 2), "-", result)
